@@ -8,8 +8,9 @@ Forked from [dewgenenny/docker_rtsp_grab](https://github.com/dewgenenny/docker_r
 
 Modified `HEALTHCHECK` to test against localhost instead of a static IP that doesn't exist so that it will pass.
 
-You need to call this image with the URL environment variable set to the URL of the camera you want it to connect to. Once
-you've got it running, you'll be able to see the snapshot at http://your-server-ip:port/snapshot.jpg
+You need to call this image with the `URL` environment variable set to the URL of the camera you want it to connect to, and `FPS` set to FPS you would want the snapshots to be updated. I have found `1/10` (once every 10 seconds) to work well.
+
+Once you've got it running, you'll be able to see the snapshot at http://your-server-ip:port/snapshot.jpg
 
 Examples:
 
