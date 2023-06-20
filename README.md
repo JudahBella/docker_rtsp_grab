@@ -6,7 +6,9 @@ Docker image to grab a still image from an RTSP feed and serve it up as a snapsh
 
 Forked from [dewgenenny/docker_rtsp_grab](https://github.com/dewgenenny/docker_rtsp_grab)
 
-Modified `HEALTHCHECK` to test against localhost instead of a static IP that doesn't exist so that it will pass.
+This image comes in handy if your camera does not expose a URL for snapshots (or at least, the URL is unknown).
+
+I have modified `HEALTHCHECK` to test against localhost instead of a static IP that doesn't exist so that it will pass.
 
 You need to call this image with the `URL` environment variable set to the URL of the camera you want it to connect to, and `FPS` set to FPS you would want the snapshots to be updated. I have found `1/10` (once every 10 seconds) to work well.
 
@@ -21,7 +23,6 @@ docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 -
 ```
 
 Building the docker image yourself:
-
 
 ```
 sudo docker build -t rtsp_grab .
