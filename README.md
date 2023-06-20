@@ -10,7 +10,7 @@ Examples:
 
 Using the image from DockerHub:
 
-docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 -p 8844:80 dewgenenny/docker_rtsp_grab
+docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 -p 8844:80 judahbella/rtsp_grab
 
 Building the docker image yourself:
 
