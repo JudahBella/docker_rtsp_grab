@@ -1,5 +1,5 @@
 # docker_rtsp_grab
-[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/JudahBella/docker_rtsp_grab/docker-image.yml)](https://github.com/JudahBella/docker_rtsp_grab/actions/workflows/docker-image.yml)
+[![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/JudahBella/docker_rtsp_grab/docker-image.yml?logo=github)](https://github.com/JudahBella/docker_rtsp_grab/actions/workflows/docker-image.yml)
 [![Docker Pulls](https://img.shields.io/docker/pulls/judahbella/rtsp_grab?logo=docker&label=pulls)](https://hub.docker.com/r/judahbella/rtsp_grab)
 
 Docker image to grab a still image from an RTSP feed and serve it up as a snapshot
