@@ -1,4 +1,6 @@
 # docker_rtsp_grab
+[![Docker Hub](https://img.shields.io/badge/docker-judahbella/rtsp_grab-blue)](https://hub.docker.com/r/judahbella/rtsp_grab)
+
 Docker image to grab a still image from an RTSP feed and serve it up as a snapshot
 
 Forked from [dewgenenny/docker_rtsp_grab](https://github.com/dewgenenny/docker_rtsp_grab)
