@@ -19,7 +19,7 @@ Examples:
 Using the image from DockerHub:
 
 ```
-docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 -p 8844:80 judahbella/rtsp_grab
+docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 FPS=1/10 -p 8844:80 judahbella/rtsp_grab
 ```
 
 Building the docker image yourself:
@@ -31,7 +31,7 @@ sudo docker build -t rtsp_grab .
 Then, run your newly built docker image:
 
 ```
-docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 -p 8844:80 rtsp_grab  
+docker run --rm --name rtsp_grab -e URL=http://url-of-your-camera:554/live/ch0 FPS=1/10 -p 8844:80 rtsp_grab  
 ```
 
 I highly recommend double checking that your URL works using VLC or ffmpeg before moving to use image
