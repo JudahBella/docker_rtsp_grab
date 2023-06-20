@@ -3,8 +3,6 @@ name: Docker Image CI
 on:
   push:
     branches: [ "master" ]
-    paths-ignore:
-      - '**/README.md'
   pull_request:
     branches: [ "master" ]
 
@@ -38,3 +36,11 @@ jobs:
         push: true
         tags: judahbella/rtsp_grab:latest
         labels: ${{ steps.meta.outputs.labels }}
+        
+    - name: Update repo description
+      uses: peter-evans/dockerhub-description@v3
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_TOKEN }}
+        repository: judahbella/rtsp_grab
+        short-description: ${{ github.event.repository.description }}
