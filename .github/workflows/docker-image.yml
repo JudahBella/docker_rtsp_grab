@@ -26,7 +26,7 @@ jobs:
       id: meta
       uses: docker/metadata-action@v4
       with:
-        images: JudahBella/docker_rtsp_grab
+        images: judahbella/rtsp_grab
         
     - name: Build and push Docker image
       uses: docker/build-push-action@v4
@@ -34,5 +34,5 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: ${{ steps.meta.outputs.tags }}
+        tags: judahbella/rtsp_grab:latest
         labels: ${{ steps.meta.outputs.labels }}
