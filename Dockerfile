@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM alpine:3.7
 
 RUN apk add --no-cache lighttpd
 RUN apk add --no-cache curl
